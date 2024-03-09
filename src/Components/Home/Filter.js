@@ -14,7 +14,7 @@ const Filter = () => {
 
   }
 
-  const handlefilterChange = (filtername,value) => {
+  const handleFilterChange = (filtername,value) => {
     setSelectedFilters((prevFilters) => ({
       ...prevFilters,
       [filtername] : value,
@@ -29,7 +29,7 @@ const Filter = () => {
       {isModalOpen && (
         <FilterModal 
         selectedFilters={selectedFilters}
-        onFilterChange={handlefilterChange}
+        onFilterChange={handleFilterChange}
         onClose={handleCloseModal}
         />
       )}
